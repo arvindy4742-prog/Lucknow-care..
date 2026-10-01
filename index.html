@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lucknow Care | आयुष्मान भारत, अपॉइंटमेंट, एम्बुलेंस एवं हेल्थकेयर सहायता</title>
+
+<meta name="description"
+content="Lucknow Care — आयुष्मान भारत PM-JAY जानकारी, अस्पताल सहायता, डॉक्टर अपॉइंटमेंट, फिजियोथेरेपी और एम्बुलेंस सहायता।">
+
+<style>
+:root{
+  --primary:#075985;
+  --primary2:#0e7490;
+  --teal:#0f9f9a;
+  --green:#16a34a;
+  --light:#effafa;
+  --soft:#f5fafc;
+  --dark:#082f49;
+  --text:#183b4a;
+  --muted:#647b85;
+  --white:#ffffff;
+  --border:#dcecef;
+  --shadow:0 15px 45px rgba(7,89,133,.10);
+  --radius:22px;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,"Noto Sans Devanagari",sans-serif;
+  background:var(--soft);
+  color:var(--text);
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:min(1160px,92%);
+  margin:auto;
+}
+
+/* TOP BAR */
+.topbar{
+  background:var(--dark);
+  color:#dff8ff;
+  font-size:13px;
+}
+
+.topbar-inner{
+  min-height:38px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* HEADER */
+header{
+  background:#fff;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 4px 25px rgba(0,0,0,.07);
+}
+
+.nav{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.logo{
+  font-size:26px;
+  font-weight:900;
+  color:var(--dark);
+}
+
+.logo span{
+  color:var(--teal);
+}
+
+.nav-links{
+  display:flex;
+  gap:22px;
+  align-items:center;
+}
+
+.nav-links a{
+  font-size:14px;
+  font-weight:700;
+  color:#35535f;
+}
+
+.nav-links a:hover{
+  color:var(--teal);
+}
+
+/* BUTTONS */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:13px 19px;
+  border-radius:12px;
+  border:none;
+  cursor:pointer;
+  font-weight:800;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.btn-primary{
+  background:var(--primary2);
+  color:white;
+}
+
+.btn-green{
+  background:var(--green);
+  color:white;
+}
+
+.btn-white{
+  background:white;
+  color:var(--primary);
+}
+
+.btn-outline{
+  background:white;
+  color:var(--primary2);
+  border:1px solid #b8dce1;
+}
+
+/* HERO */
+.hero{
+  padding:70px 0 60px;
+  background:
+  radial-gradient(circle at 90% 10%,#c9fff1 0,transparent 30%),
+  linear-gradient(135deg,#edfafd,#f9ffff);
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:45px;
+  align-items:center;
+}
+
+.badge{
+  display:inline-flex;
+  padding:8px 14px;
+  border-radius:30px;
+  background:#dff7f3;
+  color:#087d7e;
+  font-size:13px;
+  font-weight:900;
+}
+
+.hero h1{
+  font-size:52px;
+  line-height:1.08;
+  color:var(--dark);
+  margin:18px 0;
+}
+
+.hero h1 span{
+  color:var(--teal);
+}
+
+.hero-text{
+  color:var(--muted);
+  font-size:18px;
+  max-width:680px;
+}
+
+.hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:28px;
+}
+
+/* AYUSHMAN HERO CARD */
+.ayushman-main{
+  background:white;
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:0 25px 65px rgba(5,85,100,.18);
+  border:1px solid #dceff0;
+}
+
+.ayushman-head{
+  padding:25px;
+  background:linear-gradient(135deg,#075985,#0e7490);
+  color:white;
+}
+
+.ayushman-head small{
+  opacity:.9;
+  font-weight:700;
+}
+
+.ayushman-head h2{
+  font-size:30px;
+  margin:6px 0;
+}
+
+.cover{
+  padding:28px;
+  text-align:center;
+}
+
+.cover-number{
+  font-size:48px;
+  font-weight:950;
+  color:var(--green);
+  line-height:1;
+}
+
+.cover-text{
+  font-weight:800;
+  color:var(--dark);
+  margin:10px 0 18px;
+}
+
+.info-note{
+  background:#f0faf8;
+  padding:13px;
+  border-radius:12px;
+  font-size:12px;
+  color:#55717a;
+  text-align:left;
+}
+
+/* QUICK OPTIONS */
+.section{
+  padding:75px 0;
+}
+
+.section-title{
+  text-align:center;
+  max-width:720px;
+  margin:0 auto 38px;
+}
+
+.section-title h2{
+  font-size:35px;
+  color:var(--dark);
+  margin-bottom:10px;
+}
+
+.section-title p{
+  color:var(--muted);
+}
+
+.quick-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.quick-card{
+  background:white;
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:24px;
+  box-shadow:var(--shadow);
+  transition:.25s;
+}
+
+.quick-card:hover{
+  transform:translateY(-7px);
+}
+
+.icon{
+  width:58px;
+  height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+  background:#e8f8f7;
+  border-radius:17px;
+}
+
+.quick-card h3{
+  color:var(--dark);
+  margin:14px 0 7px;
+}
+
+.quick-card p{
+  font-size:14px;
+  color:var(--muted);
+  min-height:68px;
+}
+
+/* AYUSHMAN SECTION */
+.ayushman-section{
+  background:linear-gradient(135deg,#e9fbf8,#f4ffff);
+}
+
+.ayush-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  align-items:center;
+}
+
+.ayush-content h2{
+  font-size:39px;
+  color:var(--dark);
+}
+
+.ayush-content h2 span{
+  color:var(--green);
+}
+
+.ayush-content p{
+  color:var(--muted);
+  margin:15px 0;
+}
+
+.benefits{
+  display:grid;
+  gap:12px;
+  margin:22px 0;
+}
+
+.benefit{
+  background:white;
+  padding:15px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+}
+
+.benefit b{
+  color:var(--dark);
+}
+
+.ayush-card{
+  background:white;
+  border-radius:25px;
+  padding:30px;
+  box-shadow:var(--shadow);
+  border:1px solid var(--border);
+}
+
+.ayush-card .big{
+  font-size:50px;
+  font-weight:950;
+  color:var(--green);
+}
+
+.ayush-card h3{
+  color:var(--dark);
+  font-size:24px;
+}
+
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.service-card{
+  background:white;
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:28px;
+  box-shadow:var(--shadow);
+}
+
+.service-card h3{
+  margin:14px 0 7px;
+  color:var(--dark);
+}
+
+.service-card p{
+  color:var(--muted);
+  margin-bottom:18px;
+}
+
+/* STEPS */
+.steps-section{
+  background:var(--dark);
+  color:white;
+}
+
+.steps-section .section-title h2{
+  color:white;
+}
+
+.steps-section .section-title p{
+  color:#c5dce2;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.step{
+  padding:28px;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:20px;
+}
+
+.step-number{
+  font-size:35px;
+  font-weight:900;
+  color:#68e6d2;
+}
+
+.step h3{
+  margin:8px 0;
+}
+
+/* APPOINTMENT */
+.appointment{
+  background:#eefafa;
+}
+
+.form-box{
+  max-width:850px;
+  margin:auto;
+  background:white;
+  padding:32px;
+  border-radius:25px;
+  box-shadow:var(--shadow);
+}
+
+.form-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+label{
+  display:block;
+  font-weight:800;
+  font-size:14px;
+  margin:12px 0 7px;
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  padding:14px;
+  border:1px solid #cfe0e4;
+  border-radius:11px;
+  font-size:15px;
+  outline:none;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:var(--teal);
+}
+
+textarea{
+  min-height:110px;
+  resize:vertical;
+}
+
+.form-note{
+  font-size:12px;
+  color:#728890;
+  margin-top:14px;
+}
+
+/* CONTACT */
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.contact-card{
+  background:white;
+  padding:28px;
+  border-radius:20px;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+
+.contact-card h3{
+  color:var(--dark);
+  margin-bottom:8px;
+}
+
+.contact-card p{
+  color:var(--muted);
+}
+
+/* FAQ */
+.faq{
+  max-width:850px;
+  margin:auto;
+}
+
+details{
+  background:white;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:18px 20px;
+  margin:10px 0;
+}
+
+summary{
+  cursor:pointer;
+  font-weight:800;
+  color:var(--dark);
+}
+
+details p{
+  color:var(--muted);
+  margin-top:12px;
+}
+
+/* FOOTER */
+footer{
+  background:#062c3a;
+  color:#d5e9ed;
+  padding:45px 0 20px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:35px;
+}
+
+footer h3{
+  color:white;
+  margin-bottom:12px;
+}
+
+footer a{
+  display:block;
+  margin:7px 0;
+  color:#d5e9ed;
+}
+
+.copyright{
+  text-align:center;
+  border-top:1px solid #ffffff1c;
+  padding-top:20px;
+  margin-top:30px;
+  font-size:13px;
+}
+
+/* FLOAT BUTTONS */
+.float{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:150;
+  display:flex;
+  gap:9px;
+}
+
+.float a{
+  width:54px;
+  height:54px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  border-radius:50%;
+  font-size:22px;
+  box-shadow:0 8px 25px #0004;
+}
+
+.whatsapp{
+  background:#16a34a;
+}
+
+.call{
+  background:var(--primary2);
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+  .nav-links{
+    display:none;
+  }
+
+  .hero-grid,
+  .ayush-grid{
+    grid-template-columns:1fr;
+  }
+
+  .quick-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .services,
+  .steps,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:40px;
+  }
+
+  .topbar{
+    display:none;
+  }
+}
+
+@media(max-width:560px){
+
+  .container{
+    width:94%;
+  }
+
+  .section{
+    padding:55px 0;
+  }
+
+  .quick-grid{
+    grid-template-columns:1fr;
+  }
+
+  .form-row{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding:45px 0;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
+
+  .hero-text{
+    font-size:16px;
+  }
+
+  .ayush-content h2{
+    font-size:31px;
+  }
+
+  .cover-number{
+    font-size:42px;
+  }
+
+  .section-title h2{
+    font-size:29px;
+  }
+
+  .form-box{
+    padding:20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>🏥 Lucknow Care • Healthcare Support</span>
+    <span>📧 arvindy4742@gmail.com</span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+
+    <a href="#" class="logo">
+      Lucknow <span>Care</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home">होम</a>
+      <a href="#ayushman">आयुष्मान भारत</a>
+      <a href="#services">सेवाएँ</a>
+      <a href="#appointment">अपॉइंटमेंट</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a class="btn btn-primary" href="tel:8112702737">
+      📞 कॉल करें
+    </a>
+
+  </div>
+</header>
+
+
+<main id="home">
+
+<!-- HERO -->
+<section class="hero">
+<div class="container hero-grid">
+
+  <div>
+
+    <span class="badge">
+      🏥 आपकी हेल्थकेयर सहायता एक ही जगह
+    </span>
+
+    <h1>
+      सही स्वास्थ्य सेवा तक
+      <span>आसान पहुँच।</span>
+    </h1>
+
+    <p class="hero-text">
+      आयुष्मान भारत की जानकारी, अस्पताल सहायता,
+      डॉक्टर अपॉइंटमेंट, फिजियोथेरेपी और एम्बुलेंस
+      सहायता — सभी जरूरी विकल्प अब एक ही जगह।
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#ayushman" class="btn btn-green">
+        🪪 आयुष्मान ₹5 लाख तक
+      </a>
+
+      <a href="#appointment" class="btn btn-primary">
+        📅 अपॉइंटमेंट बुक करें
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- AYUSHMAN HERO -->
+  <div class="ayushman-main">
+
+    <div class="ayushman-head">
+      <small>AYUSHMAN BHARAT • PM-JAY</small>
+      <h2>स्वास्थ्य सुरक्षा योजना</h2>
+      <p>पात्र लाभार्थियों के लिए</p>
+    </div>
+
+    <div class="cover">
+
+      <div class="cover-number">
+        ₹5 लाख*
+      </div>
+
+      <div class="cover-text">
+        प्रति परिवार प्रति वर्ष तक स्वास्थ्य कवर
+      </div>
+
+      <a
+        href="https://pmjay.gov.in/"
+        target="_blank"
+        class="btn btn-green"
+        style="width:100%;"
+      >
+        आधिकारिक जानकारी देखें ↗
+      </a>
+
+      <div class="info-note">
+        *लाभ पात्रता और योजना के लागू नियमों के अनुसार उपलब्ध होते हैं।
+        अपनी पात्रता और अस्पताल की empanelment की पुष्टि आधिकारिक
+        PM-JAY स्रोत से करें।
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- QUICK OPTIONS -->
+<section class="section">
+<div class="container">
+
+  <div class="section-title">
+    <h2>आपको किस सेवा की जरूरत है?</h2>
+    <p>
+      नीचे दिए गए विकल्प में से अपनी जरूरत चुनें।
+    </p>
+  </div>
+
+  <div class="quick-grid">
+
+    <div class="quick-card">
+      <div class="icon">🪪</div>
+      <h3>आयुष्मान भारत</h3>
+      <p>
+        ₹5 लाख तक के स्वास्थ्य कवर और
+        पात्रता संबंधी आधिकारिक जानकारी।
+      </p>
+      <a href="#ayushman" class="btn btn-green">
+        जानकारी देखें
+      </a>
+    </div>
+
+
+    <div class="quick-card">
+      <div class="icon">📅</div>
+      <h3>अपॉइंटमेंट</h3>
+      <p>
+        डॉक्टर, अस्पताल या फिजियोथेरेपी
+        के लिए appointment request भेजें।
+      </p>
+      <a href="#appointment" class="btn btn-primary">
+        अपॉइंटमेंट
+      </a>
+    </div>
+
+
+    <div class="quick-card">
+      <div class="icon">🚑</div>
+      <h3>एम्बुलेंस सहायता</h3>
+      <p>
+        आवश्यकता होने पर सीधे फोन करके
+        उपलब्ध सहायता के बारे में पूछें।
+      </p>
+      <a href="tel:8112702737" class="btn btn-primary">
+        अभी कॉल करें
+      </a>
+    </div>
+
+
+    <div class="quick-card">
+      <div class="icon">💪</div>
+      <h3>फिजियोथेरेपी</h3>
+      <p>
+        फिजियोथेरेपी सेवा के लिए
+        appointment request भेजें।
+      </p>
+      <a href="#appointment" class="btn btn-outline">
+        बुक करें
+      </a>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- AYUSHMAN -->
+<section class="section ayushman-section" id="ayushman">
+<div class="container ayush-grid">
+
+  <div class="ayush-content">
+
+    <span class="badge">
+      🪪 AYUSHMAN BHARAT • PM-JAY
+    </span>
+
+    <h2>
+      पात्र परिवारों के लिए
+      <span>₹5 लाख तक</span>
+      का स्वास्थ्य कवर
+    </h2>
+
+    <p>
+      प्रधानमंत्री जन आरोग्य योजना (PM-JAY) के अंतर्गत
+      पात्र लाभार्थियों को अस्पताल में भर्ती से संबंधित
+      कई उपचारों के लिए स्वास्थ्य कवर उपलब्ध हो सकता है।
+    </p>
+
+    <div class="benefits">
+
+      <div class="benefit">
+        <span>✓</span>
+        <div>
+          <b>₹5 लाख तक का वार्षिक कवर</b><br>
+          <small>पात्र परिवारों के लिए योजना के नियमों के अनुसार।</small>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <span>✓</span>
+        <div>
+          <b>Empanelled Hospital की जानकारी</b><br>
+          <small>अस्पताल की योजना में भागीदारी की पुष्टि करें।</small>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <span>✓</span>
+        <div>
+          <b>पात्रता की आधिकारिक जांच</b><br>
+          <small>सही जानकारी के लिए सरकारी पोर्टल का उपयोग करें।</small>
+        </div>
+      </div>
+
+    </div>
+
+    <a
+      href="https://pmjay.gov.in/"
+      target="_blank"
+      class="btn btn-green"
+    >
+      🌐 PM-JAY की आधिकारिक वेबसाइट
+    </a>
+
+  </div>
+
+
+  <div class="ayush-card">
+
+    <div class="big">₹5 लाख*</div>
+
+    <h3>प्रति परिवार प्रति वर्ष तक</h3>
+
+    <p style="color:var(--muted);margin:12px 0 20px;">
+      PM-JAY के अंतर्गत पात्र परिवारों के लिए
+      उपलब्ध स्वास्थ्य कवर की जानकारी।
+    </p>
+
+    <div class="info-note">
+      महत्वपूर्ण: यह वेबसाइट सरकारी PM-JAY पोर्टल नहीं है।
+      पात्रता, लाभ, अस्पताल और उपचार की उपलब्धता की पुष्टि
+      आधिकारिक सरकारी स्रोत से करें।
+    </div>
+
+    <br>
+
+    <a
+      href="https://pmjay.gov.in/"
+      target="_blank"
+      class="btn btn-primary"
+      style="width:100%;"
+    >
+      पात्रता/योजना जानकारी देखें ↗
+    </a>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- SERVICES -->
+<section class="section" id="services">
+<div class="container">
+
+  <div class="section-title">
+    <h2>हमारी प्रमुख सेवाएँ</h2>
+    <p>
+      आपकी जरूरत के अनुसार सही विकल्प तक आसानी से पहुँचें।
+    </p>
+  </div>
+
+  <div class="services">
+
+    <div class="service-card">
+      <div class="icon">🏥</div>
+      <h3>अस्पताल सहायता</h3>
+      <p>
+        अस्पताल और स्वास्थ्य सेवाओं से संबंधित
+        सामान्य जानकारी और सहायता के लिए संपर्क करें।
+      </p>
+      <a href="#appointment" class="btn btn-outline">
+        जानकारी लें
+      </a>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">👨‍⚕️</div>
+      <h3>डॉक्टर अपॉइंटमेंट</h3>
+      <p>
+        ऑनलाइन form भरकर अपनी appointment
+        request भेजें।
+      </p>
+      <a href="#appointment" class="btn btn-primary">
+        अपॉइंटमेंट बुक करें
+      </a>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">🚑</div>
+      <h3>एम्बुलेंस सहायता</h3>
+      <p>
+        एम्बुलेंस संबंधी उपलब्ध सहायता के लिए
+        सीधे फोन पर संपर्क करें।
+      </p>
+      <a href="tel:8112702737" class="btn btn-primary">
+        📞 8112702737
+      </a>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- PROCESS -->
+<section class="section steps-section" id="process">
+<div class="container">
+
+  <div class="section-title">
+    <h2>यह वेबसाइट कैसे इस्तेमाल करें?</h2>
+    <p>
+      आपकी जरूरत के अनुसार सिर्फ तीन आसान कदम।
+    </p>
+  </div>
+
+  <div class="steps">
+
+    <div class="step">
+      <div class="step-number">01</div>
+      <h3>अपनी जरूरत चुनें</h3>
+      <p>
+        आयुष्मान, appointment, ambulance
+        या physiotherapy में से विकल्प चुनें।
+      </p>
+    </div>
+
+    <div class="step">
+      <div class="step-number">02</div>
+      <h3>जानकारी या फॉर्म भरें</h3>
+      <p>
+        जरूरी जानकारी भरकर अपनी request भेजें।
+      </p>
+    </div>
+
+    <div class="step">
+      <div class="step-number">03</div>
+      <h3>संपर्क की पुष्टि</h3>
+      <p>
+        आपकी request के आधार पर दिए गए
+        संपर्क विवरण पर आगे जानकारी दी जा सकती है।
+      </p>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- APPOINTMENT -->
+<section class="section appointment" id="appointment">
+<div class="container">
+
+  <div class="section-title">
+    <h2>📅 ऑनलाइन अपॉइंटमेंट</h2>
+    <p>
+      नीचे की जानकारी भरकर appointment request भेजें।
+    </p>
+  </div>
+
+  <form
+    class="form-box"
+    action="https://formsubmit.co/arvindy4742@gmail.com"
+    method="POST"
+  >
+
+    <input
+      type="hidden"
+      name="_subject"
+      value="New Appointment Request - Lucknow Care"
+    >
+
+    <input
+      type="hidden"
+      name="_captcha"
+      value="false"
+    >
+
+    <input
+      type="hidden"
+      name="_template"
+      value="table"
+    >
+
+    <div class="form-row">
+
+      <div>
+        <label>मरीज का नाम *</label>
+        <input
+          type="text"
+          name="Patient Name"
+          placeholder="अपना नाम लिखें"
+          required
+        >
+      </div>
+
+      <div>
+        <label>मोबाइल नंबर *</label>
+        <input
+          type="tel"
+          name="Mobile"
+          placeholder="10 अंकों का मोबाइल नंबर"
+          required
+        >
+      </div>
+
+    </div>
+
+
+    <div class="form-row">
+
+      <div>
+        <label>अपॉइंटमेंट तारीख *</label>
+        <input
+          type="date"
+          name="Date"
+          required
+        >
+      </div>
+
+      <div>
+        <label>समय *</label>
+        <input
+          type="time"
+          name="Time"
+          required
+        >
+      </div>
+
+    </div>
+
+
+    <label>आपको कौन-सी सेवा चाहिए? *</label>
+
+    <select name="Service" required>
+
+      <option value="">
+        सेवा चुनें
+      </option>
+
+      <option>
+        आयुष्मान भारत जानकारी
+      </option>
+
+      <option>
+        डॉक्टर / अस्पताल अपॉइंटमेंट
+      </option>
+
+      <option>
+        फिजियोथेरेपी
+      </option>
+
+      <option>
+        एम्बुलेंस सहायता
+      </option>
+
+      <option>
+        अन्य स्वास्थ्य सहायता
+      </option>
+
+    </select>
+
+
+    <label>आपकी समस्या / संदेश</label>
+
+    <textarea
+      name="Message"
+      placeholder="अपनी समस्या संक्षेप में लिखें..."
+    ></textarea>
+
+
+    <button
+      type="submit"
+      class="btn btn-primary"
+      style="width:100%;margin-top:18px;"
+    >
+      📩 Appointment Request भेजें
+    </button>
+
+    <p class="form-note">
+      आपकी request दिए गए ईमेल पर भेजने के लिए FormSubmit का उपयोग किया गया है।
+      पहली बार उपयोग करने पर email verification/activation की आवश्यकता हो सकती है।
+    </p>
+
+  </form>
+
+</div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="section">
+<div class="container">
+
+  <div class="section-title">
+    <h2>सीधे संपर्क करें</h2>
+    <p>
+      सामान्य जानकारी और appointment सहायता के लिए संपर्क करें।
+    </p>
+  </div>
+
+  <div class="contact-grid">
+
+    <div class="contact-card">
+      <h3>📞 फोन</h3>
+      <p>
+        <a href="tel:8112702737">8112702737</a><br>
+        <a href="tel:9721702737">9721702737</a>
+      </p>
+      <br>
+      <a href="tel:8112702737" class="btn btn-primary">
+        अभी कॉल करें
+      </a>
+    </div>
+
+    <div class="contact-card">
+      <h3>💬 WhatsApp</h3>
+      <p><a href="#doctor-registration">डॉक्टर रजिस्ट्रेशन</a>
+        <!-- DOCTOR REGISTRATION -->
+<section class="section doctor-section" id="doctor-registration">
+  <div class="container">
+
+    <div class="section-title">
+      <span class="badge">👨‍⚕️ DOCTOR & CLINIC REGISTRATION</span>
+      <h2>गाँव और स्थानीय क्लिनिक के डॉक्टरों के लिए सुविधा</h2>
+      <p>
+        यदि आप गाँव, कस्बे या स्थानीय क्षेत्र में क्लिनिक चलाते हैं,
+        तो Lucknow Care के माध्यम से अपनी जानकारी भेज सकते हैं।
+      </p>
+    </div>
+
+    <div class="doctor-grid">
+
+      <!-- LEFT INFORMATION -->
+      <div class="doctor-info">
+
+        <div class="doctor-highlight">
+          <div class="doctor-icon">🏥</div>
+          <div>
+            <h3>अपने क्लिनिक की जानकारी भेजें</h3>
+            <p>
+              स्थानीय डॉक्टर और छोटे क्लिनिक अपनी basic जानकारी,
+              सेवा और संपर्क विवरण registration request के रूप में भेज सकते हैं।
+            </p>
+          </div>
+        </div>
+
+        <div class="doctor-benefits">
+
+          <div class="doctor-benefit">
+            <span>✓</span>
+            <div>
+              <b>क्लिनिक की जानकारी</b>
+              <small>क्लिनिक का नाम और स्थान साझा करें।</small>
+            </div>
+          </div>
+
+          <div class="doctor-benefit">
+            <span>✓</span>
+            <div>
+              <b>डॉक्टर की जानकारी</b>
+              <small>नाम, विशेषज्ञता और संपर्क विवरण दें।</small>
+            </div>
+          </div>
+
+          <div class="doctor-benefit">
+            <span>✓</span>
+            <div>
+              <b>उपलब्ध सेवाएँ</b>
+              <small>आप किन स्वास्थ्य सेवाओं के लिए उपलब्ध हैं, बताएं।</small>
+            </div>
+          </div>
+
+          <div class="doctor-benefit">
+            <span>✓</span>
+            <div>
+              <b>क्षेत्रीय स्वास्थ्य नेटवर्क</b>
+              <small>
+                Registration request की समीक्षा के बाद
+                आगे संपर्क किया जा सकता है।
+              </small>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="doctor-note">
+          <strong>⚠️ महत्वपूर्ण:</strong>
+          यह registration form डॉक्टर की जानकारी एकत्र करने के लिए है।
+          Registration अपने आप किसी डॉक्टर को verified या सरकारी
+          empanelled डॉक्टर नहीं बनाता।
+        </div>
+
+      </div>
+
+
+      <!-- FORM -->
+      <form
+        class="doctor-form"
+        action="https://formsubmit.co/arvindy4742@gmail.com"
+        method="POST"
+      >
+
+        <input
+          type="hidden"
+          name="_subject"
+          value="New Doctor / Clinic Registration - Lucknow Care"
+        >
+
+        <input
+          type="hidden"
+          name="_captcha"
+          value="false"
+        >
+
+        <input
+          type="hidden"
+          name="_template"
+          value="table"
+        >
+
+        <h3>👨‍⚕️ Doctor Registration Form</h3>
+
+        <p class="form-description">
+          कृपया सही जानकारी भरें।
+        </p>
+
+
+        <label>डॉक्टर का नाम *</label>
+        <input
+          type="text"
+          name="Doctor Name"
+          placeholder="डॉ. का पूरा नाम"
+          required
+        >
+
+
+        <div class="form-row">
+
+          <div>
+            <label>मोबाइल नंबर *</label>
+            <input
+              type="tel"
+              name="Doctor Mobile"
+              placeholder="10 अंकों का मोबाइल नंबर"
+              required
+            >
+          </div>
+
+          <div>
+            <label>क्लिनिक का नाम *</label>
+            <input
+              type="text"
+              name="Clinic Name"
+              placeholder="क्लिनिक का नाम"
+              required
+            >
+          </div>
+
+        </div>
+
+
+        <label>चिकित्सा क्षेत्र / विशेषज्ञता *</label>
+
+        <select name="Specialization" required>
+
+          <option value="">
+            विशेषज्ञता चुनें
+          </option>
+
+          <option>General Physician</option>
+          <option>Child Specialist</option>
+          <option>Women Health</option>
+          <option>Orthopedic</option>
+          <option>Dental</option>
+          <option>Ayurvedic</option>
+          <option>Homeopathic</option>
+          <option>Physiotherapy</option>
+          <option>Other</option>
+
+        </select>
+
+
+        <label>क्लिनिक का पता *</label>
+
+        <textarea
+          name="Clinic Address"
+          placeholder="गाँव / कस्बा / शहर / जिला / पिन कोड"
+          required
+        ></textarea>
+
+
+        <div class="form-row">
+
+          <div>
+            <label>क्लिनिक उपलब्ध समय</label>
+
+            <input
+              type="text"
+              name="Clinic Timing"
+              placeholder="जैसे: सुबह 9 से दोपहर 1 बजे"
+            >
+
+          </div>
+
+          <div>
+
+            <label>अनुभव</label>
+
+            <input
+              type="text"
+              name="Experience"
+              placeholder="जैसे: 5 वर्ष"
+            >
+
+          </div>
+
+        </div>
+
+
+        <label>उपलब्ध सेवाएँ</label>
+
+        <textarea
+          name="Services"
+          placeholder="जैसे: सामान्य जांच, BP, Diabetes, Dressing आदि"
+        ></textarea>
+
+
+        <label>अतिरिक्त जानकारी</label>
+
+        <textarea
+          name="Additional Information"
+          placeholder="कोई अन्य जानकारी..."
+        ></textarea>
+
+
+        <button
+          type="submit"
+          class="btn btn-primary"
+          style="width:100%;margin-top:18px;"
+        >
+          📩 Registration Request भेजें
+        </button>
+
+
+        <p class="form-note">
+          आपकी जानकारी review के लिए दिए गए email पर भेजी जाएगी।
+          Registration स्वीकार या प्रकाशित करने से पहले जानकारी की
+          पुष्टि की जा सकती है।
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>/* DOCTOR REGISTRATION */
+
+.doctor-section{
+  background:
+    linear-gradient(135deg,#f0fbfc,#f7fffc);
+}
+
+.doctor-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  align-items:start;
+}
+
+.doctor-info{
+  background:var(--dark);
+  color:white;
+  border-radius:25px;
+  padding:30px;
+  box-shadow:0 20px 55px rgba(7,47,73,.18);
+}
+
+.doctor-highlight{
+  display:flex;
+  gap:16px;
+  align-items:flex-start;
+  padding-bottom:22px;
+  border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.doctor-icon{
+  min-width:60px;
+  height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#ffffff15;
+  border-radius:17px;
+  font-size:30px;
+}
+
+.doctor-highlight h3{
+  font-size:23px;
+  margin-bottom:7px;
+}
+
+.doctor-highlight p{
+  color:#c9e0e6;
+  font-size:14px;
+}
+
+.doctor-benefits{
+  display:grid;
+  gap:12px;
+  margin-top:22px;
+}
+
+.doctor-benefit{
+  display:flex;
+  gap:12px;
+  padding:14px;
+  border-radius:14px;
+  background:#ffffff0c;
+  border:1px solid #ffffff12;
+}
+
+.doctor-benefit > span{
+  color:#68e6d2;
+  font-size:20px;
+  font-weight:900;
+}
+
+.doctor-benefit b{
+  display:block;
+  margin-bottom:2px;
+}
+
+.doctor-benefit small{
+  color:#c5dce2;
+}
+
+.doctor-note{
+  margin-top:22px;
+  padding:15px;
+  border-radius:13px;
+  background:#ffffff0b;
+  border:1px solid #ffffff15;
+  color:#cfe2e6;
+  font-size:12px;
+  line-height:1.6;
+}
+
+.doctor-form{
+  background:white;
+  border:1px solid var(--border);
+  border-radius:25px;
+  padding:30px;
+  box-shadow:var(--shadow);
+}
+
+.doctor-form h3{
+  font-size:25px;
+  color:var(--dark);
+}
+
+.form-description{
+  color:var(--muted);
+  font-size:14px;
+  margin-bottom:15px;
+}
+
+@media(max-width:900px){
+
+  .doctor-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:560px){
+
+  .doctor-info,
+  .doctor-form{
+    padding:20px;
+  }
+
+  .doctor-highlight h3{
+    font-size:20px;
+  }
+
+}
